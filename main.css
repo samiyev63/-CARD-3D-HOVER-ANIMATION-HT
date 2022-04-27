@@ -1,0 +1,35 @@
+.cards {
+    perspective: 500px;
+}
+.card{
+width: 200px;
+height: 250px;
+background: url('./s.jpg')
+center no-repeat;
+background-size: cover;
+border: 1px solid
+rgba(255, 255, 255, .25);
+border-radius: 4px;
+position: relative;
+transform-style: preserve-3d;
+will-change: transform;
+transition: transform .5s;
+}
+.card:hover{
+transform: translateZ(10px) 
+rotateX(20deg) rotateY(30deg);
+box-shadow: 3px 3px 5px black;
+}
+.card-title{
+color:#fff;
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
+transition: transform .5s;
+
+
+}
+.card:hover .card-title{
+    transform: translateZ(50px);
+}
